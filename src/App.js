@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import MyCard from "./components/MyCard";
+import Topbar from "./components/Topbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    const list = ["Bowl", "Plate", "A La Carte", "Drinks"];
+    return (
+        <div>
+            <Topbar label='Customer View' list={list} />
+            <MyCard title = "bowl" pic = "https://www.eatthis.com/wp-content/uploads/sites/4/2018/10/panda-express-beijing-beef.jpg" />
+        </div>
+    );
+};
 
 export default App;

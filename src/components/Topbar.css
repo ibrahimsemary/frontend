@@ -1,0 +1,26 @@
+.panda-icon{
+    size: inherit;
+}
+.topbar-container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.topbar-icon{
+    height: fit-content;
+}
+.topbar-container{
+    height: 100px;
+}
+.list-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card-img{
+    object-fit: fill;
+}
+.my-card{
+    height: 300px;
+    width: 300px;
+
+}
